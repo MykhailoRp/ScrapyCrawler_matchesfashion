@@ -25,7 +25,7 @@ class ShoesSpider(scrapy.Spider):
 
             price_drop = product.xpath('normalize-space(.//span[@data-testid="ProductPrice-rrp"])').get()
 
-            if price_drop is None:
+            if price_drop == '' or price_drop is None:
                 price_full = product.xpath('.//span[@data-testid="ProductPrice-billing-price"]/text()').get()
             else:
                 price_full = price_drop.replace('(', '').replace(')', '')
