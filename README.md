@@ -18,4 +18,8 @@ After the installation use this command from project folder to start the scraper
 
     scrapy crawl shoes -O results.json
 
-Let the program run, see the results in results.json
+Let the program run, see the results in **results.json**
+
+## Examples
+
+See example results in **example.json**
